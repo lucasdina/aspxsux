@@ -61,7 +61,7 @@
                     <div class="col-lg-9">
                         <asp:Button ID="btnClear" runat="server" Text="Clear"
                             CssClass="btn btn-secondary" CausesValidation="false" OnClick="btnClear_Click" />
-                        <asp:Button ID="btnSubmit" runat="server" Text="Add Borrower"
+                        <asp:Button ID="btnSubmit" UseSubmitBehavior="false" runat="server" Text="Add Borrower"
                             CssClass="btn btn-primary" OnClick="btnSubmit_Click" />
                     </div>
                     <asp:Label CssClass="text-danger" runat="server" ID="txtErrorMessage"></asp:Label>
@@ -83,7 +83,7 @@
                                     <div class="modal-footer">
                                         <asp:Button ID="btnAddAnother" runat="server" Text="Add Another"
                                             CssClass="btn btn-secondary" OnClick="btnAddAnother_Click" />
-                                        <asp:Button ID="btnReturn" runat="server" Text="Back to Main Menu"
+                                        <asp:Button ID="btnReturn" runat="server" Text="Confirm Borrower"
                                             CssClass="btn btn-primary" OnClick="btnReturn_Click" />
                                     </div>
                                 </div>

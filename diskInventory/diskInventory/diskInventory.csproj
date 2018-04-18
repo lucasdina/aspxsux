@@ -68,8 +68,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConfirmBorrower.aspx" />
     <Content Include="DiskInventory.Master" />
     <None Include="packages.config" />
+    <Content Include="Images\pika.gif" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
     <None Include="Web.Debug.config">
@@ -152,6 +154,13 @@
     <Compile Include="Borrowers.aspx.designer.cs">
       <DependentUpon>Borrowers.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ConfirmBorrower.aspx.cs">
+      <DependentUpon>ConfirmBorrower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmBorrower.aspx.designer.cs">
+      <DependentUpon>ConfirmBorrower.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -173,6 +182,7 @@
     <Compile Include="Disks.aspx.designer.cs">
       <DependentUpon>Disks.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Borrower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -181,9 +191,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

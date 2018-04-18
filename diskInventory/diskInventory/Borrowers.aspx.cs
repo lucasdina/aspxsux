@@ -1,4 +1,5 @@
-﻿using System;
+﻿using diskInventory.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,7 +22,7 @@ namespace diskInventory
 
         protected void btnReturn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Default.aspx");
+            Response.Redirect("/ConfirmBorrower.aspx");
         }
 
         protected void btnClear_Click(object sender, EventArgs e)
@@ -37,8 +38,16 @@ namespace diskInventory
             if (validateFields())
             {
                 lblModalTitle.Text = "Successfully Added Borrower";
-                lblModalBody.Text = txtFirstName + " has been successfully added to the database. Please select an option.";
+                lblModalBody.Text = txtFirstName.Text + " has been successfully added to the database. Please select an option.";
                 ScriptManager.RegisterStartupScript(Page, Page.GetType(), "myModal", "$('#myModal').modal();", true);
+                Borrower borrower = new Borrower
+                {
+                    FirstName = txtFirstName.Text,
+                    LastName = txtLastName.Text,
+                    Email = txtEmail.Text,
+                    Phone = txtPhone.Text
+                };
+                Session["currentBorrower"] = borrower;
                 upModal.Update();
             } else
             {
