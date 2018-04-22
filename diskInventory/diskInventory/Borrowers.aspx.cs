@@ -16,12 +16,12 @@ namespace diskInventory
 
         protected void btnAddAnother_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Borrowers.aspx");
+            Response.Redirect("./Borrowers.aspx");
         }
 
         protected void btnReturn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Default.aspx");
+            Response.Redirect("./Default.aspx");
         }
 
         protected void btnClear_Click(object sender, EventArgs e)

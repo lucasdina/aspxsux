@@ -6,7 +6,7 @@
    <!-- form user info -->
     <div class="card card-outline-secondary">
         <div class="card-header text-center">
-            <h3 class="mb-0">Borrower Information</h3>
+            <h3 class="mb-0">Artist Information</h3>
         </div>
         <div class="card-body">
             <form class="form" role="form" runat="server" autocomplete="off">
@@ -39,7 +39,7 @@
                     <div class="col-lg-9">
                         <asp:Button ID="btnClear" runat="server" Text="Clear"
                             CssClass="btn btn-secondary" CausesValidation="false" OnClick="btnClear_Click" />
-                        <asp:Button ID="btnSubmit" runat="server" Text="Add Borrower"
+                        <asp:Button ID="btnSubmit" runat="server" Text="Add Artist"
                             CssClass="btn btn-primary" OnClick="btnSubmit_Click" />
                     </div>
                     <asp:Label CssClass="text-danger" runat="server" ID="txtErrorMessage"></asp:Label>

@@ -11,7 +11,26 @@ namespace diskInventory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+        }
 
+        protected void btnAddBorrower_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./Borrowers.aspx");
+        }
+
+        protected void btnAddArtist_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./Artists.aspx");
+        }
+
+        protected void btnAddDisk_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./Disks.aspx");
+        }
+
+        protected void btnViewRecords_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./Records.aspx");
         }
     }
 }

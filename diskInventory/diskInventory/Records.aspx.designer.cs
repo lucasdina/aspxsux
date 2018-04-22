@@ -10,42 +10,33 @@
 namespace diskInventory {
     
     
-    public partial class Default {
+    public partial class Records {
         
         /// <summary>
-        /// btnAddBorrower control.
+        /// btnViewDisks control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddBorrower;
+        protected global::System.Web.UI.WebControls.Button btnViewDisks;
         
         /// <summary>
-        /// btnAddArtist control.
+        /// btnViewBorrowers control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddArtist;
+        protected global::System.Web.UI.WebControls.Button btnViewBorrowers;
         
         /// <summary>
-        /// btnAddDisk control.
+        /// btnViewArtists control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddDisk;
-        
-        /// <summary>
-        /// btnViewRecords control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnViewRecords;
+        protected global::System.Web.UI.WebControls.Button btnViewArtists;
     }
 }

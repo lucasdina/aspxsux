@@ -9,7 +9,7 @@ using System.Collections;
 public class BorrowerDB
 {
     [DataObjectMethod(DataObjectMethodType.Select)]
-    public static IEnumerable GetAllDisks()
+    public static IEnumerable GetAllBorrowers()
     {
         SqlConnection con = new SqlConnection(GetConnectionString());
         string sel = "SELECT * FROM Borrower";

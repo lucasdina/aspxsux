@@ -10,7 +10,19 @@
         <div class="card-body">
             <form runat="server">
                 <h4>Welcome to Chuck's Rentals!</h4>
-                <h6>To add a borrower, click 'Borrowers' at the top of the page, or just click <a href="Borrowers.aspx">here</a>. The 'Artists' and 'Disks' sections are currently under developement, but feel free to check them out anyway!</h6>
+                <h5>Quick Shortcuts</h5>
+
+                <h6><asp:Button ID="btnAddBorrower" runat="server" Text="Add Borrower"
+                    CssClass="btn btn-primary" OnClick="btnAddBorrower_Click" /></h6>
+
+                <h6><asp:Button ID="btnAddArtist" runat="server" Text="Add Artist"
+                    CssClass="btn btn-primary" OnClick="btnAddArtist_Click" /></h6>
+
+                <h6><asp:Button ID="btnAddDisk" runat="server" Text="Add Disk"
+                    CssClass="btn btn-primary" OnClick="btnAddDisk_Click" /></h6>
+
+                <h6><asp:Button ID="btnViewRecords" runat="server" Text="View Records"
+                    CssClass="btn btn-primary" OnClick="btnViewRecords_Click" /></h6>
             </form>
         </div>
     </div>

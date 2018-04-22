@@ -9,10 +9,10 @@ using System.Collections;
 public class ArtistsDB
 {
     [DataObjectMethod(DataObjectMethodType.Select)]
-    public static IEnumerable GetAllDisks()
+    public static IEnumerable GetAllArtists()
     {
         SqlConnection con = new SqlConnection(GetConnectionString());
-        string sel = "SELECT * FROM Artists";
+        string sel = "SELECT * FROM Artist";
         SqlCommand cmd = new SqlCommand(sel, con);
         con.Open();
         SqlDataReader rdr = cmd.ExecuteReader();
