@@ -34,10 +34,10 @@ namespace diskInventory
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (validateFields())
+            if (validateFields() && BorrowerDB.AddBorrower(txtFirstName.Text, txtLastName.Text, txtEmail.Text, txtPhone.Text))
             {
                 lblModalTitle.Text = "Successfully Added Borrower";
-                lblModalBody.Text = txtFirstName + " has been successfully added to the database. Please select an option.";
+                lblModalBody.Text = txtFirstName.Text + " has been successfully added to the database. Please select an option.";
                 ScriptManager.RegisterStartupScript(Page, Page.GetType(), "myModal", "$('#myModal').modal();", true);
                 upModal.Update();
             } else

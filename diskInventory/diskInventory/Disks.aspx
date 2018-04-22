@@ -12,6 +12,9 @@
                 <img class="img-fluid" src="Images/pika.gif" alt="Under Construction" />
                 <h4>Sorry, this page is under construction. We are working as hard as we can!</h4>
                 <asp:Button CssClass="form-control" ID="Button1" OnClick="btnReturnToDefault_Click" Text="Return Home" runat="server" />
+                <asp:GridView runat="server" ID="GVDisks" DataSourceID="ObjectDataSource1">
+                </asp:GridView>
+                <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllDisks" TypeName="DisksDB"></asp:ObjectDataSource>
             </form>
         </div>
     </div>
