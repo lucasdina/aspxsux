@@ -11,6 +11,7 @@
         <div class="card-body">
             <form class="form" role="form" runat="server" autocomplete="off">
                 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                <%-- First Name --%>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">First name</label>
                     <div class="col-lg-9">
@@ -22,6 +23,7 @@
                             ValidationExpression="^[a-zA-Z][a-zA-Z\\s]+$" />
                     </div>
                 </div>
+                <%-- Last Name --%>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">Last name</label>
                     <div class="col-lg-9">
@@ -34,6 +36,7 @@
 
                     </div>
                 </div>
+                <%-- Email --%>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">Email</label>
                     <div class="col-lg-9">
@@ -45,6 +48,7 @@
                             ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" />
                     </div>
                 </div>
+                <%-- Phone Number --%>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">Phone</label>
                     <div class="col-lg-9">
@@ -56,6 +60,7 @@
                         <asp:Label ID="lblPhoneError" runat="server"></asp:Label>
                     </div>
                 </div>
+                <%-- submit and clear --%>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label"></label>
                     <div class="col-lg-9">

@@ -9,6 +9,7 @@
             <h3 class="mb-0">View Disks</h3>
         </div>
         <div class="card-body">
+            <%-- List of all disks --%>
             <asp:GridView runat="server" ID="GVDisks" DataSourceID="ObjectDataSource1"></asp:GridView>
             <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllDisks" TypeName="DisksDB"></asp:ObjectDataSource>
         </div>

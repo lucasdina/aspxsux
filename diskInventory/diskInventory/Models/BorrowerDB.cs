@@ -8,6 +8,8 @@ using System.Collections;
 [DataObject]
 public class BorrowerDB
 {
+
+    //Get complete list of borrowers
     [DataObjectMethod(DataObjectMethodType.Select)]
     public static IEnumerable GetAllBorrowers()
     {
@@ -19,7 +21,7 @@ public class BorrowerDB
         return rdr;
     }
 
-
+    // add borrower
     [DataObjectMethod(DataObjectMethodType.Select)]
     public static Boolean AddBorrower(string firstName, string lastName, string email, string phone)
     {

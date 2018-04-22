@@ -13,21 +13,25 @@ namespace diskInventory
         {
         }
 
+        //nav add borrower
         protected void btnAddBorrower_Click(object sender, EventArgs e)
         {
             Response.Redirect("./Borrowers.aspx");
         }
 
+        // nav add artist
         protected void btnAddArtist_Click(object sender, EventArgs e)
         {
             Response.Redirect("./Artists.aspx");
         }
 
+        // nav add disk
         protected void btnAddDisk_Click(object sender, EventArgs e)
         {
             Response.Redirect("./Disks.aspx");
         }
 
+        // nav view records
         protected void btnViewRecords_Click(object sender, EventArgs e)
         {
             Response.Redirect("./Records.aspx");

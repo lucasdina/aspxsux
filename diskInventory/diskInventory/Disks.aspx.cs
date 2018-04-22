@@ -14,16 +14,19 @@ namespace diskInventory
 
         }
 
+        // modal add another
         protected void btnAddAnother_Click(object sender, EventArgs e)
         {
             Response.Redirect("./Borrowers.aspx");
         }
 
+        // modal return
         protected void btnReturn_Click(object sender, EventArgs e)
         {
             Response.Redirect("./Default.aspx");
         }
 
+        // clear form
         protected void btnClear_Click(object sender, EventArgs e)
         {
             txtTitle.Text = "";
@@ -31,10 +34,12 @@ namespace diskInventory
             txtLength.Text = "";
         }
 
+        // form submit
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             if (validateFields() && DisksDB.AddDisk(txtTitle.Text, Int32.Parse(txtLength.Text), txtGenre.Text))
             {
+                // add disk to db and show modal
                 lblModalTitle.Text = "Successfully Added Disk";
                 lblModalBody.Text = txtTitle.Text + " has been successfully added to the database. Please select an option.";
                 ScriptManager.RegisterStartupScript(Page, Page.GetType(), "myModal", "$('#myModal').modal();", true);
@@ -42,10 +47,12 @@ namespace diskInventory
             }
             else
             {
+                // show error message
                 txtErrorMessage.Text = "One or more fields might not have been filled.";
             }
         }
 
+        //validate
         private bool validateFields()
         {
             bool isValid = true;
@@ -53,6 +60,7 @@ namespace diskInventory
             if (String.IsNullOrEmpty(txtLength.Text)) isValid = false;
             if (String.IsNullOrEmpty(txtGenre.Text)) isValid = false;
 
+            //verify length is an int
             try
             {
                 Int32.Parse(txtLength.Text);

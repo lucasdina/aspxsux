@@ -8,6 +8,8 @@ using System.Collections;
 [DataObject]
 public class ArtistsDB
 {
+
+    // Get complete list of artists
     [DataObjectMethod(DataObjectMethodType.Select)]
     public static IEnumerable GetAllArtists()
     {
@@ -19,6 +21,7 @@ public class ArtistsDB
         return rdr;
     }
 
+    // Add artist
     [DataObjectMethod(DataObjectMethodType.Select)]
     public static Boolean AddArtist(string firstName, string lastName)
     {

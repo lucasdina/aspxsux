@@ -14,16 +14,19 @@ namespace diskInventory
 
         }
 
+        // nav to artist list
         protected void btnViewArtists_Click(object sender, EventArgs e)
         {
             Response.Redirect("./ViewArtists.aspx");
         }
 
+        //nav to disk list
         protected void btnViewDisks_Click(object sender, EventArgs e)
         {
             Response.Redirect("./ViewDisks.aspx");
         }
 
+        // nav to borrower list
         protected void btnViewBorrowers_Click(object sender, EventArgs e)
         {
             Response.Redirect("./ViewBorrowers.aspx");

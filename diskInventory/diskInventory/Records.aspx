@@ -10,14 +10,15 @@
         <div class="card-body">
             <form runat="server">
 
-                <h6>
+                <%-- disk nav --%>
+                <h6> 
                     <asp:Button ID="btnViewDisks" runat="server" Text="Disks"
                         CssClass="btn btn-primary" OnClick="btnViewDisks_Click" /></h6>
-
+                <%-- borrower nav --%>
                 <h6>
                     <asp:Button ID="btnViewBorrowers" runat="server" Text="Borrowers"
                         CssClass="btn btn-primary" OnClick="btnViewBorrowers_Click" /></h6>
-
+                <%-- artist nav --%>
                 <h6>
                     <asp:Button ID="btnViewArtists" runat="server" Text="Artists"
                         CssClass="btn btn-primary" OnClick="btnViewArtists_Click" /></h6>

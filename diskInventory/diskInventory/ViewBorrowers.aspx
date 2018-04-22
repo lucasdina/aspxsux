@@ -8,6 +8,7 @@
             <h3 class="mb-0">View Borrowers</h3>
         </div>
         <div class="card-body">
+            <%-- list of borrowers (ignore ID) --%>
             <asp:GridView runat="server" ID="GVDisks" DataSourceID="ObjectDataSource1"></asp:GridView>
             <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllBorrowers" TypeName="BorrowerDB"></asp:ObjectDataSource>
         </div>

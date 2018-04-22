@@ -8,6 +8,7 @@
             <h3 class="mb-0">View Artists</h3>
         </div>
         <div class="card-body">
+            <%-- list of artists --%>
             <asp:GridView runat="server" ID="GVArtists" DataSourceID="ObjectDataSource1"></asp:GridView>
             <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetAllArtists" TypeName="ArtistsDB"></asp:ObjectDataSource>
         </div>

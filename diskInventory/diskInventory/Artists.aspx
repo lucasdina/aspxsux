@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <!-- form user info -->
+   <!-- form info -->
     <div class="card card-outline-secondary">
         <div class="card-header text-center">
             <h3 class="mb-0">Artist Information</h3>
@@ -11,6 +11,7 @@
         <div class="card-body">
             <form class="form" role="form" runat="server" autocomplete="off">
                 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                <%-- First Name --%>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">First name</label>
                     <div class="col-lg-9">
@@ -22,6 +23,7 @@
                             ValidationExpression="^[a-zA-Z][a-zA-Z\\s]+$" />
                     </div>
                 </div>
+                <%-- Last Name --%>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label">Last name</label>
                     <div class="col-lg-9">
@@ -34,6 +36,7 @@
 
                     </div>
                 </div>
+                <%-- Submit and Clear --%>
                 <div class="form-group row">
                     <label class="col-lg-3 col-form-label form-control-label"></label>
                     <div class="col-lg-9">
@@ -72,5 +75,5 @@
             </form>
         </div>
     </div>
-    <!-- /form user info -->
+    <!-- /form info -->
 </asp:Content>

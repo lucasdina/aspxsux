@@ -12,6 +12,7 @@
                 <h4>Welcome to Chuck's Rentals!</h4>
                 <h5>Quick Shortcuts</h5>
 
+                <%-- Quick shortcuts nav --%>
                 <h6><asp:Button ID="btnAddBorrower" runat="server" Text="Add Borrower"
                     CssClass="btn btn-primary" OnClick="btnAddBorrower_Click" /></h6>
 

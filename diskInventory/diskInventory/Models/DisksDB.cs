@@ -8,6 +8,7 @@ using System.Collections;
 [DataObject]
 public class DisksDB
 {
+    // get complete list of disks
     [DataObjectMethod(DataObjectMethodType.Select)]
     public static IEnumerable GetAllDisks()
     {
@@ -19,7 +20,7 @@ public class DisksDB
         return rdr;
     }
 
-
+    // add disk
     [DataObjectMethod(DataObjectMethodType.Select)]
     public static Boolean AddDisk(string title, int length, string genre)
     {
