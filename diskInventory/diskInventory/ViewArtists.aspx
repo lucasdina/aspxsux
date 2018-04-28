@@ -9,7 +9,7 @@
         </div>
         <div class="card-body">
             <%-- list of artists --%>
-            <asp:GridView runat="server" ID="GVArtists" DataSourceID="SqlDataSource1" AutoGenerateColumns="False" DataKeyNames="artist_id" AllowPaging="True" PageSize="20">
+            <asp:GridView runat="server" ID="GVArtists" DataSourceID="SqlDataSource1" AutoGenerateColumns="False" DataKeyNames="artist_id" AllowPaging="True" PageSize="20" CssClass="Grid">
                 <Columns>
                     <asp:BoundField DataField="artist_id" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="artist_id" />
                     <asp:BoundField DataField="artist_first_name" HeaderText="First Name" SortExpression="artist_first_name" />
