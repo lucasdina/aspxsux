@@ -17,7 +17,7 @@ namespace diskInventory
         // modal add another
         protected void btnAddAnother_Click(object sender, EventArgs e)
         {
-            Response.Redirect("./Borrowers.aspx");
+            Response.Redirect("./Disks.aspx");
         }
 
         // modal return
