@@ -47,7 +47,7 @@
          <!-- form user info -->
     <div class="card card-outline-secondary" style="margin-top: 20px">
         <div class="card-header text-center">
-            <h3 class="mb-0">Disk Information</h3>
+            <h3 class="mb-0">Add Disk</h3>
         </div>
         <div class="card-body">
                 <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
