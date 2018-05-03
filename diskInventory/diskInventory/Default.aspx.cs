@@ -36,5 +36,11 @@ namespace diskInventory
         {
             Response.Redirect("./Records.aspx");
         }
+
+        // nav view records
+        protected void btnViewRentals_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./Rentals.aspx");
+        }
     }
 }

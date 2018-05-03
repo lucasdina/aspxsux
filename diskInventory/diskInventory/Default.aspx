@@ -24,6 +24,9 @@
 
                 <h6><asp:Button ID="btnViewRecords" runat="server" Text="View Records"
                     CssClass="btn btn-primary" OnClick="btnViewRecords_Click" /></h6>
+
+                <h6><asp:Button ID="Button1" runat="server" Text="View Rentals"
+                    CssClass="btn btn-primary" OnClick="btnViewRentals_Click" /></h6>
             </form>
         </div>
     </div>

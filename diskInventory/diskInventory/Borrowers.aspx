@@ -56,7 +56,7 @@
                             CssClass="form-control" placeholder="555-555-5555"></asp:TextBox>
                         <asp:RegularExpressionValidator CssClass="text-danger" ID="RegularExpressionValidator2" runat="server"
                             ErrorMessage="Enter Valid Phone Number" ControlToValidate="txtPhone"
-                            ValidationExpression="^[01]?[- .]?(\([2-9]\d{2}\)|[2-9]\d{2})[- .]?\d{3}[- .]?\d{4}$"></asp:RegularExpressionValidator>
+                            ValidationExpression="^[01]?[- .]?(\([0-9]\d{2}\)|[0-9]\d{2})[- .]?\d{3}[- .]?\d{4}$"></asp:RegularExpressionValidator>
                         <asp:Label ID="lblPhoneError" runat="server"></asp:Label>
                     </div>
                 </div>
