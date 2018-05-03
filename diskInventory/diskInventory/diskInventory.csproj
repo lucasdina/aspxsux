@@ -83,6 +83,9 @@
     <None Include="packages.config" />
     <Content Include="Records.aspx" />
     <Content Include="Rent.aspx" />
+    <Content Include="RentalRecords.aspx" />
+    <Content Include="Rentals.aspx" />
+    <Content Include="RentDisk.aspx" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
@@ -197,6 +200,7 @@
     <Compile Include="Models\BorrowerDB.cs" />
     <Compile Include="Models\DisksDB.cs" />
     <Compile Include="Objects\Borrower.cs" />
+    <Compile Include="Objects\Disk.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Records.aspx.cs">
       <DependentUpon>Records.aspx</DependentUpon>
@@ -211,6 +215,27 @@
     </Compile>
     <Compile Include="Rent.aspx.designer.cs">
       <DependentUpon>Rent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RentalRecords.aspx.cs">
+      <DependentUpon>RentalRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RentalRecords.aspx.designer.cs">
+      <DependentUpon>RentalRecords.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rentals.aspx.cs">
+      <DependentUpon>Rentals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rentals.aspx.designer.cs">
+      <DependentUpon>Rentals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RentDisk.aspx.cs">
+      <DependentUpon>RentDisk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RentDisk.aspx.designer.cs">
+      <DependentUpon>RentDisk.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewArtists.aspx.cs">
       <DependentUpon>ViewArtists.aspx</DependentUpon>

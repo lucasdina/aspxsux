@@ -39,6 +39,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./Records.aspx">Records</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Rentals.aspx">Rentals</a>
+                </li>
             </ul>
         </div>
     </nav>
